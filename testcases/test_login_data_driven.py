@@ -5,7 +5,6 @@ from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from utilities import data_reader_util
 
-
 csv_data = data_reader_util.read_csv_data("C://Users//pbhagoriya//PycharmProjects//FrameworkDevelopment//testdata//logindata.csv")
 @pytest.mark.parametrize("login_data",csv_data)
 def test_login_data_driven_testing(page,login_data):

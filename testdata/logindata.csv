@@ -1,5 +1,5 @@
 testName,email,password,Name,expected
-Invalid Login,siya.sharma@sample.com,siyasharma,siya sharma,Success
+Valid Login,siya.sharma@sample.com,siyasharma,siya sharma,Success
 Invalid Login,siya.sharma38982@sample.com,siyasharma,None,Failure
 Valid Login,margaret02@example.com,*fAPt^6k048X,Craig,Success
 Valid Login,harriskim@example.net,&9zi6utQ5ZoT,Katherine,Success
