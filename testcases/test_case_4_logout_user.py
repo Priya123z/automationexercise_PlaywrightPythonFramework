@@ -12,7 +12,7 @@ csv_data = read_csv_data(file_path)
 
 valid_data = [data for data in csv_data if data["testName"] == "Valid Login"]
 
-
+@pytest.mark.regression
 @pytest.mark.parametrize("loginData",valid_data)
 def test_user_logout(page, loginData):
     HomePageObj = HomePage(page)

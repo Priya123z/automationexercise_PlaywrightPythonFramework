@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import expect
 from pages.Contact_us_page import ContactsPage
 from pages.home_page import HomePage
@@ -6,6 +7,7 @@ from pathlib import Path
 
 file_path = Path(__file__).parent.parent/"FileInputs"/"Sample.txt"
 
+@pytest.mark.regression
 def test_ContactUsForm(page):
     '''
       1. Launch browser
