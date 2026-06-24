@@ -1,0 +1,11 @@
+[OK] Starting browser: chromium
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://automationexercise.com/
+[TRACE] Tracing enabled - capturing screenshots and actions
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+1 product found
+[RESULT] Test 'test_searchProduct' result: [PASS]
+[SAVE] Trace saved: reports/traces/test_searchProduct_trace.zip
+[CLEANUP] Closing browser context and stopping Playwright...

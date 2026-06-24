@@ -1,0 +1,12 @@
+[OK] Starting browser: chromium
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://automationexercise.com/
+[TRACE] Tracing enabled - capturing screenshots and actions
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+Error reading CSV file: [Errno 2] No such file or directory: 'C://Users//pbhagoriya//PycharmProjects//FrameworkDevelopment//testdata//ProductsAdd.csv'
+[]
+[BLOCKED] https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677597403311019
+[RESULT] Test 'test_add_to_cart_module' result: [PASS]
+[SAVE] Trace saved: reports/traces/test_add_to_cart_module_trace.zip
+[CLEANUP] Closing browser context and stopping Playwright...
