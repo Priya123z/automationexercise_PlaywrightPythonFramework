@@ -12,7 +12,7 @@ class ContactsPage:
         self.messageinput = page.locator("#message")
         self.file_upload = page.locator("input[name='upload_file']")
         self.submit_button = page.locator("input[value='Submit']")
-        self.success_message = page.locator("div.alert-success.status")
+        self.success_message = page.locator("div.status.alert.alert-success")
 
     def go_to_contactus_page(self):
         try:
@@ -62,7 +62,7 @@ class ContactsPage:
             raise
     def accept_dialog(self):
         try:
-            self.page.on("dialog", lambda dialog : dialog.accept())
+            self.page.once("dialog", lambda dialog: dialog.accept())
         except Exception as e:
             print(f"Error while clicking accepting the dialog: {e}")
             raise

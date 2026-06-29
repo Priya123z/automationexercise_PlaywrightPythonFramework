@@ -172,8 +172,8 @@ def page(request, browser_context):
         else:
             route.continue_()
     page.route("**/*", block_ads)
-    # Dismiss JS dialogs
-    page.on("dialog", lambda dialog: dialog.dismiss())
+    # # Dismiss JS dialogs
+    # page.on("dialog", lambda dialog: dialog.accept())
     # Close browser popup windows
     page.on("popup", lambda popup: popup.close())
 

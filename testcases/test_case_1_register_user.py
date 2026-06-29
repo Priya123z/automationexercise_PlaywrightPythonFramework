@@ -41,7 +41,7 @@ def test_register_user(page):
     #6. Enter name and email address
     registrationData = registration_faker.generate_registration_data()
     registration_page.Enter_signup_name(registrationData["SignupName"])
-    registration_page.Enter_signup_email(registrationData["SignupEmail"])
+    registration_page.Enter_signup_email(registrationData["sign_up_email"])
 
     #7. Click 'Signup' button
     registration_page.ClickSignupBtn()

@@ -13,9 +13,11 @@ class RegistrationFaker:
 
         gender = random.choice(["Mr", "Mrs"])
         unique = datetime.now().strftime("%Y%m%d%H%M%S%f")
+        email = self.fake.unique.email()
+        local, domain = email.split("@")
 
         return {
-            "SignupEmail": f"{self.fake.unique.email()}_{unique}",
+            "sign_up_email" : f"{local}_{unique}@{domain}",
 
             "SignupName": self.fake.first_name(),
 
