@@ -25,7 +25,7 @@ class CartPage:
     def get_totals(self):
         return self.totals.all_text_contents()
     def proceed_to_checkout(self):
-        self.proceed_to_checkout_btn.first.click()
+        self.proceed_to_checkout_btn.click()
     def click_login_register_signin_link(self):
         self.Register_login_link.click()
 

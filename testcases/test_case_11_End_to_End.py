@@ -108,11 +108,14 @@ def addProductsToCart(page, HomePageobj):
     HomePageobj.click_products_link()
     Productpageobj.SearchSpecificProduct(config.Config.One_product_name)
     Productpageobj.Add_to_cart_product(config.Config.One_product_name)
+    Productpageobj.click_on_view_cart_button_in_popup()
+
 def verify_cart_content(page,HomePageobj):
     HomePageobj.click_cart_link()
     CartPageobj = CartPage(page)
     ItemsAdded = CartPageobj.get_NameofItems()
     assert config.Config.One_product_name in ItemsAdded
+    expect(CartPageobj.proceed_to_checkout_btn).to_be_visible()
     CartPageobj.proceed_to_checkout()
 def Checkout_cart(page):
     Checkoutobj = Checkout(page)

@@ -24,7 +24,7 @@ def test_ContactUsForm(page):
     expect(ContactPageobj.return_get_in_touch_title()).to_have_text("Get In Touch")
     #6. Enter name, email, subject and message
     FakeData = Registration_Faker.generate_ContactUs_data()
-    ContactPageobj.set_email(FakeData['sign_up_email'])
+    ContactPageobj.set_email(FakeData['email'])
     ContactPageobj.set_name(FakeData['name'])
     ContactPageobj.set_subject(FakeData['subject'])
     ContactPageobj.set_messageinput(FakeData['message'])

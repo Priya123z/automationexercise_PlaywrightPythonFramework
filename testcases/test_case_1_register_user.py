@@ -19,6 +19,7 @@ from utilities.random_data_util import RegistrationFaker
 
 # Test Case 1: Register User
 @pytest.mark.sanity
+@pytest.mark.registerUser
 def test_register_user(page):
     '''
     1. Launch browser

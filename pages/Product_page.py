@@ -36,6 +36,7 @@ class ProductPage:
 
     def SearchSpecificProduct(self,ProductName):
         self.searchProduct_Input.fill(ProductName)
+        self.page.wait_for_load_state("networkidle")
         self.SearchProductButton.click()
         count = self.AllProducts.count()
         if(count == 0):
@@ -106,9 +107,7 @@ class ProductPage:
     def Add_to_cart_product(self,Product_name):
         product = self.AllProducts.filter(has_text=Product_name).first
         product.hover()
-        product.locator(".productinfo a", has_text="Add to cart").click()
-        self.ContinueShopping()
-
+        product.locator(".product-overlay a", has_text="Add to cart").click()
 
 
 

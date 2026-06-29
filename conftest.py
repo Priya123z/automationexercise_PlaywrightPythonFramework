@@ -179,6 +179,8 @@ def page(request, browser_context):
 
     #1. Launch browser
     page.goto(base_url,timeout=60000)
+    page.wait_for_load_state("domcontentloaded")
+    page.wait_for_load_state("load")
 
 
     # Yield the page to the test
