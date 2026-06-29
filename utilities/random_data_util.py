@@ -1,3 +1,5 @@
+import datetime
+
 from faker import Faker
 import random
 
@@ -10,9 +12,10 @@ class RegistrationFaker:
     def generate_registration_data(self):
 
         gender = random.choice(["Mr", "Mrs"])
+        unique = datetime.now().strftime("%Y%m%d%H%M%S%f")
 
         return {
-            "SignupEmail": self.fake.unique.email(),
+            "SignupEmail": f"{self.fake.unique.email()}_{unique}",
 
             "SignupName": self.fake.first_name(),
 
