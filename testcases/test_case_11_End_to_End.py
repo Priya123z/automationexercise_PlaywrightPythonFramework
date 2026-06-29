@@ -89,7 +89,7 @@ def perform_registration(page):
     HomePageobj.click_login_signup_link()
     expect(registrationobj.end_to_end_registration_process(UserData)).to_have_text(
         "Congratulations! Your new account has been successfully created!")
-    UserEmail = UserData["SignupEmail"]
+    UserEmail = UserData["sign_up_email"]
     UserPassword = UserData["SignupPassword"]
     registrationobj.click_continue_btn()
     HomePageobj = HomePage(page)

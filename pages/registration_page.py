@@ -181,7 +181,7 @@ class RegistrationPage:
 
     def end_to_end_registration_process(self, userData: dict):
         """Complete the Registration process with the provided data"""
-        self.Enter_signup_email(userData["SignupEmail"])
+        self.Enter_signup_email(userData["sign_up_email"])
         self.Enter_signup_name(userData["SignupName"])
         self.ClickSignupBtn()
         self.gender_selection(userData["genderName"])
