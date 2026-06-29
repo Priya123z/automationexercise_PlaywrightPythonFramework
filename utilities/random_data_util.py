@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 from faker import Faker
 import random
