@@ -32,6 +32,7 @@ def test_ContactUsForm(page):
     ContactPageobj.set_file_upload(file_path)
     #8. Click 'Submit' button
     #9. Click OK button
+    page.wait_for_load_state("networkidle")
     ContactPageobj.accept_dialog()
     ContactPageobj.click_submit_button()
     #10. Verify success message 'Success! Your details have been submitted successfully.' is visible
